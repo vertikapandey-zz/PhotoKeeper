@@ -1,0 +1,8 @@
+<div class="card-deck" >
+  <div class="card" *ngFor="let photo of currentPhotoList">
+    <a (click)="openImage(photo)" style="cursor:pointer"><img class="card-img-top" [src]="photo.thumbnailUrl" alt="Card image cap"></a>
+    <div class="card-body">
+      <h5 class="card-title">{{photo.title}}</h5>
+    </div>
+</div>
+</div>

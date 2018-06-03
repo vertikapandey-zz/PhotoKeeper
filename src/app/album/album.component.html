@@ -1,0 +1,12 @@
+<button class="btn btn-primary" style="cursor:pointer" (click)="openPhotosInAlbum()" [disabled]="commonService.selectedIds.length>2 || commonService.selectedIds.length<1 ">Show Photos</button>
+<span class="alert alert-warning" *ngIf="commonService.selectedIds.length>2">
+  <strong>Warning!</strong>Maximum 2 selection allowed!!
+</span>
+<mat-list >
+  <mat-list-item *ngFor="let album of albums" (click)="addSelctedAlbumsId(album.id)" [ngClass]="{'active':setSelctedClass(album.id)}">
+    <mat-icon matListIcon class="selected">photo_library</mat-icon>
+    <h3 matLine> {{album.title}} </h3>
+    <p matLine>
+   
+  </mat-list-item>
+</mat-list>
