@@ -29,6 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## npm install
 Install node_modules
 
-##npm install npm install bootstrap@4.0.0-alpha.6
-for bootstrap
+## npm install bootstrap@4.0.0-alpha.6
+for bootstrap version used in project
 
